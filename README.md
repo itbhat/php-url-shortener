@@ -89,7 +89,7 @@ The database structure is provided in `database.sql`.
 ### 1. Clone the repository
 
 ```bash
-git clone https://github.com/YOUR-USERNAME/php-url-shortener.git
+git clone https://github.com/itbhat/php-url-shortener.git
 cd php-url-shortener
 ```
 
