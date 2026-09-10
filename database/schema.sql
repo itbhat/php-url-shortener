@@ -1,0 +1,23 @@
+CREATE DATABASE IF NOT EXISTS url_shortener
+CHARACTER SET utf8mb4
+COLLATE utf8mb4_unicode_ci;
+
+USE url_shortener;
+
+CREATE TABLE urls (
+  id BIGINT UNSIGNED AUTO_INCREMENT PRIMARY KEY,
+
+  original_url TEXT NOT NULL,
+
+  short_code VARCHAR(12) NOT NULL UNIQUE,
+
+  clicks INT UNSIGNED NOT NULL DEFAULT 0,
+
+  created_at TIMESTAMP NOT NULL DEFAULT CURRENT_TIMESTAMP,
+
+  expires_at TIMESTAMP NULL DEFAULT NULL,
+
+  is_active BOOLEAN NOT NULL DEFAULT TRUE,
+
+  INDEX idx_created_at (created_at)
+);

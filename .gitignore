@@ -1,0 +1,15 @@
+# Local configuration
+config.php
+
+# XAMPP / local environment
+xampp/
+htdocs/
+database.sql
+
+# IDE / editor
+.vscode/
+.idea/
+
+# OS files
+.DS_Store
+Thumbs.db
